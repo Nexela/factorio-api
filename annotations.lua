@@ -14,6 +14,9 @@ local LuaSurface = {
     get_tile = function(x, y) end,
 }
 
+---@class integer
+---@operator add:uint
+
 ---@class float
 ---@operator unm:float
 ---@operator mod:float
@@ -101,3 +104,11 @@ local LuaSurface = {
 ---@operator div:defines.direction
 ---@operator sub:defines.direction
 ---@operator mul:defines.direction
+
+---@class uint
+---@operator unm:uint
+---@operator mod:uint
+---@operator add:uint
+---@operator div:uint
+---@operator sub:uint
+---@operator mul:uint
