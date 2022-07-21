@@ -1,6 +1,4 @@
--- "global",
--- "data",
--- "mods",
+---@meta
 
 ---@param msg LocalisedString
 function log(msg) end

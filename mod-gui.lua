@@ -1,3 +1,5 @@
+---@meta
+
 --[[
 Hello script explorer, if you are looking to upgrade your mod to use the mod gui, its pretty simple.
 

@@ -86,7 +86,8 @@ function serpent.load(str, options) end
 ---@field maxnum number specify max number of elemmets in a table.
 ---@field maxlength number specify max length for all table elements.
 ---@field metatostring boolean use __tostring metatamethod when serializing tables; set to false to disable and serialize the table as is.
----@field numformat string specify format for numeric values as shortest possible round-trippable double. Use "%.16g" for better readability and "%.17g" to preserve floating point precision. default: "%.17g"
+---@field numformat string specify format for numeric values as shortest possible round-trippable double.\
+---Use "%.16g" for better readability and "%.17g" to preserve floating point precision. default: "%.17g"
 ---@field valignore {[string]: true} allows to specify a list of values to ignore (as keys).
 ---@field keyallow {[string]: true} allows to specify the list of keys to be serialized. Any keys not in this list are not included in final output (as keys).
 ---@field keyignore {[string]: true} allows to specity the list of keys to ignore in serialization.

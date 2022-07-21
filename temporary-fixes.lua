@@ -14,7 +14,6 @@ local LuaSurface = {
     get_tile = function(x, y) end,
 }
 
-
 -----@class uint
 -----@operator unm:uint
 -----@operator mod:uint
