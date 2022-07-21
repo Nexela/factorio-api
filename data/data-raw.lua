@@ -1,0 +1,404 @@
+---@meta
+
+---@alias Prototype.name string
+---@alias PrototypeType {[Prototype.name]: Prototype?}
+
+---@class PrototypeTypes: SettingPrototypeTypes
+---@field ["font"] PrototypeType
+---@field ["noise-layer"] PrototypeType
+---@field ["gui-style"] PrototypeType
+---@field ["utility-constants"] PrototypeType
+---@field ["utility-sounds"] PrototypeType
+---@field ["sprite"] PrototypeType
+---@field ["utility-sprites"] PrototypeType
+---@field ["god-controller"] PrototypeType
+---@field ["editor-controller"] PrototypeType
+---@field ["spectator-controller"] PrototypeType
+---@field ["noise-expression"] PrototypeType
+---@field ["mouse-cursor"] PrototypeType
+---@field ["virtual-signal"] PrototypeType
+---@field ["flying-text"] PrototypeType
+---@field ["item"] PrototypeType
+---@field ["fluid"] PrototypeType
+---@field ["tile"] PrototypeType
+---@field ["custom-input"] PrototypeType
+---@field ["ambient-sound"] PrototypeType
+---@field ["wind-sound"] PrototypeType
+---@field ["container"] PrototypeType
+---@field ["explosion"] PrototypeType
+---@field ["character-corpse"] PrototypeType
+---@field ["optimized-particle"] PrototypeType
+---@field ["character"] PrototypeType
+---@field ["furnace"] PrototypeType
+---@field ["transport-belt"] PrototypeType
+---@field ["fish"] PrototypeType
+---@field ["boiler"] PrototypeType
+---@field ["electric-pole"] PrototypeType
+---@field ["generator"] PrototypeType
+---@field ["offshore-pump"] PrototypeType
+---@field ["inserter"] PrototypeType
+---@field ["item-entity"] PrototypeType
+---@field ["pipe"] PrototypeType
+---@field ["radar"] PrototypeType
+---@field ["lamp"] PrototypeType
+---@field ["arrow"] PrototypeType
+---@field ["pipe-to-ground"] PrototypeType
+---@field ["assembling-machine"] PrototypeType
+---@field ["entity-ghost"] PrototypeType
+---@field ["tile-ghost"] PrototypeType
+---@field ["deconstructible-tile-proxy"] PrototypeType
+---@field ["item-request-proxy"] PrototypeType
+---@field ["cliff"] PrototypeType
+---@field ["wall"] PrototypeType
+---@field ["lab"] PrototypeType
+---@field ["highlight-box"] PrototypeType
+---@field ["splitter"] PrototypeType
+---@field ["underground-belt"] PrototypeType
+---@field ["loader"] PrototypeType
+---@field ["loader-1x1"] PrototypeType
+---@field ["car"] PrototypeType
+---@field ["gate"] PrototypeType
+---@field ["train-stop"] PrototypeType
+---@field ["rail-signal"] PrototypeType
+---@field ["rail-chain-signal"] PrototypeType
+---@field ["solar-panel"] PrototypeType
+---@field ["accumulator"] PrototypeType
+---@field ["electric-energy-interface"] PrototypeType
+---@field ["player-port"] PrototypeType
+---@field ["land-mine"] PrototypeType
+---@field ["logistic-container"] PrototypeType
+---@field ["rocket-silo"] PrototypeType
+---@field ["rocket-silo-rocket"] PrototypeType
+---@field ["rocket-silo-rocket-shadow"] PrototypeType
+---@field ["roboport"] PrototypeType
+---@field ["storage-tank"] PrototypeType
+---@field ["pump"] PrototypeType
+---@field ["market"] PrototypeType
+---@field ["beacon"] PrototypeType
+---@field ["smoke-with-trigger"] PrototypeType
+---@field ["sticker"] PrototypeType
+---@field ["reactor"] PrototypeType
+---@field ["heat-pipe"] PrototypeType
+---@field ["simple-entity-with-force"] PrototypeType
+---@field ["simple-entity-with-owner"] PrototypeType
+---@field ["flame-thrower-explosion"] PrototypeType
+---@field ["artillery-flare"] PrototypeType
+---@field ["unit"] PrototypeType
+---@field ["speech-bubble"] PrototypeType
+---@field ["spider-vehicle"] PrototypeType
+---@field ["spider-leg"] PrototypeType
+---@field ["infinity-container"] PrototypeType
+---@field ["infinity-pipe"] PrototypeType
+---@field ["burner-generator"] PrototypeType
+---@field ["heat-interface"] PrototypeType
+---@field ["linked-container"] PrototypeType
+---@field ["linked-belt"] PrototypeType
+---@field ["fire"] PrototypeType
+---@field ["mining-drill"] PrototypeType
+---@field ["particle-source"] PrototypeType
+---@field ["stream"] PrototypeType
+---@field ["resource"] PrototypeType
+---@field ["turret"] PrototypeType
+---@field ["ammo-turret"] PrototypeType
+---@field ["corpse"] PrototypeType
+---@field ["electric-turret"] PrototypeType
+---@field ["artillery-turret"] PrototypeType
+---@field ["unit-spawner"] PrototypeType
+---@field ["straight-rail"] PrototypeType
+---@field ["curved-rail"] PrototypeType
+---@field ["locomotive"] PrototypeType
+---@field ["cargo-wagon"] PrototypeType
+---@field ["fluid-wagon"] PrototypeType
+---@field ["artillery-wagon"] PrototypeType
+---@field ["simple-entity"] PrototypeType
+---@field ["rail-remnants"] PrototypeType
+---@field ["tree"] PrototypeType
+---@field ["trivial-smoke"] PrototypeType
+---@field ["combat-robot"] PrototypeType
+---@field ["construction-robot"] PrototypeType
+---@field ["logistic-robot"] PrototypeType
+---@field ["capsule"] PrototypeType
+---@field ["repair-tool"] PrototypeType
+---@field ["copy-paste-tool"] PrototypeType
+---@field ["blueprint"] PrototypeType
+---@field ["tool"] PrototypeType
+---@field ["item-with-entity-data"] PrototypeType
+---@field ["rail-planner"] PrototypeType
+---@field ["upgrade-item"] PrototypeType
+---@field ["deconstruction-item"] PrototypeType
+---@field ["blueprint-book"] PrototypeType
+---@field ["spidertron-remote"] PrototypeType
+---@field ["selection-tool"] PrototypeType
+---@field ["item-with-tags"] PrototypeType
+---@field ["item-with-label"] PrototypeType
+---@field ["item-with-inventory"] PrototypeType
+---@field ["module"] PrototypeType
+---@field ["ammo"] PrototypeType
+---@field ["gun"] PrototypeType
+---@field ["armor"] PrototypeType
+---@field ["mining-tool"] PrototypeType
+---@field ["item-group"] PrototypeType
+---@field ["item-subgroup"] PrototypeType
+---@field ["recipe"] PrototypeType
+---@field ["autoplace-control"] PrototypeType
+---@field ["map-settings"] PrototypeType
+---@field ["map-gen-presets"] PrototypeType
+---@field ["tile-effect"] PrototypeType
+---@field ["optimized-decorative"] PrototypeType
+---@field ["damage-type"] PrototypeType
+---@field ["ammo-category"] PrototypeType
+---@field ["fuel-category"] PrototypeType
+---@field ["recipe-category"] PrototypeType
+---@field ["resource-category"] PrototypeType
+---@field ["module-category"] PrototypeType
+---@field ["equipment-grid"] PrototypeType
+---@field ["equipment-category"] PrototypeType
+---@field ["shortcut"] PrototypeType
+---@field ["trigger-target-type"] PrototypeType
+---@field ["projectile"] PrototypeType
+---@field ["artillery-projectile"] PrototypeType
+---@field ["beam"] PrototypeType
+---@field ["technology"] PrototypeType
+---@field ["tips-and-tricks-item"] PrototypeType
+---@field ["tips-and-tricks-item-category"] PrototypeType
+---@field ["build-entity-achievement"] PrototypeType
+---@field ["research-achievement"] PrototypeType
+---@field ["finish-the-game-achievement"] PrototypeType
+---@field ["group-attack-achievement"] PrototypeType
+---@field ["construct-with-robots-achievement"] PrototypeType
+---@field ["deconstruct-with-robots-achievement"] PrototypeType
+---@field ["deliver-by-robots-achievement"] PrototypeType
+---@field ["train-path-achievement"] PrototypeType
+---@field ["player-damaged-achievement"] PrototypeType
+---@field ["produce-achievement"] PrototypeType
+---@field ["produce-per-hour-achievement"] PrototypeType
+---@field ["dont-use-entity-in-energy-production-achievement"] PrototypeType
+---@field ["kill-achievement"] PrototypeType
+---@field ["combat-robot-count"] PrototypeType
+---@field ["dont-craft-manually-achievement"] PrototypeType
+---@field ["dont-build-entity-achievement"] PrototypeType
+---@field ["achievement"] PrototypeType
+---@field ["fluid-turret"] PrototypeType
+---@field ["arithmetic-combinator"] PrototypeType
+---@field ["decider-combinator"] PrototypeType
+---@field ["constant-combinator"] PrototypeType
+---@field ["programmable-speaker"] PrototypeType
+---@field ["power-switch"] PrototypeType
+---@field ["tutorial"] PrototypeType
+---@field ["night-vision-equipment"] PrototypeType
+---@field ["energy-shield-equipment"] PrototypeType
+---@field ["battery-equipment"] PrototypeType
+---@field ["solar-panel-equipment"] PrototypeType
+---@field ["generator-equipment"] PrototypeType
+---@field ["active-defense-equipment"] PrototypeType
+---@field ["movement-bonus-equipment"] PrototypeType
+---@field ["roboport-equipment"] PrototypeType
+---@field ["belt-immunity-equipment"] PrototypeType
+---@field ["smoke"] PrototypeType
+---@field ["particle"] PrototypeType
+---@field ["leaf-particle"] PrototypeType
+
+---@class SettingPrototypeTypes
+---@field ["bool-setting"] PrototypeType
+---@field ["int-setting"] PrototypeType
+---@field ["double-setting"] PrototypeType
+---@field ["string-setting"] PrototypeType
+
+---@alias PrototypeType.name
+---| "font"
+---| "noise-layer"
+---| "gui-style"
+---| "utility-constants"
+---| "utility-sounds"
+---| "sprite"
+---| "utility-sprites"
+---| "god-controller"
+---| "editor-controller"
+---| "spectator-controller"
+---| "noise-expression"
+---| "mouse-cursor"
+---| "virtual-signal"
+---| "flying-text"
+---| "item"
+---| "fluid"
+---| "tile"
+---| "custom-input"
+---| "ambient-sound"
+---| "wind-sound"
+---| "container"
+---| "explosion"
+---| "character-corpse"
+---| "optimized-particle"
+---| "character"
+---| "furnace"
+---| "transport-belt"
+---| "fish"
+---| "boiler"
+---| "electric-pole"
+---| "generator"
+---| "offshore-pump"
+---| "inserter"
+---| "item-entity"
+---| "pipe"
+---| "radar"
+---| "lamp"
+---| "arrow"
+---| "pipe-to-ground"
+---| "assembling-machine"
+---| "entity-ghost"
+---| "tile-ghost"
+---| "deconstructible-tile-proxy"
+---| "item-request-proxy"
+---| "cliff"
+---| "wall"
+---| "lab"
+---| "highlight-box"
+---| "splitter"
+---| "underground-belt"
+---| "loader"
+---| "loader-1x1"
+---| "car"
+---| "gate"
+---| "train-stop"
+---| "rail-signal"
+---| "rail-chain-signal"
+---| "solar-panel"
+---| "accumulator"
+---| "electric-energy-interface"
+---| "player-port"
+---| "land-mine"
+---| "logistic-container"
+---| "rocket-silo"
+---| "rocket-silo-rocket"
+---| "rocket-silo-rocket-shadow"
+---| "roboport"
+---| "storage-tank"
+---| "pump"
+---| "market"
+---| "beacon"
+---| "smoke-with-trigger"
+---| "sticker"
+---| "reactor"
+---| "heat-pipe"
+---| "simple-entity-with-force"
+---| "simple-entity-with-owner"
+---| "flame-thrower-explosion"
+---| "artillery-flare"
+---| "unit"
+---| "speech-bubble"
+---| "spider-vehicle"
+---| "spider-leg"
+---| "infinity-container"
+---| "infinity-pipe"
+---| "burner-generator"
+---| "heat-interface"
+---| "linked-container"
+---| "linked-belt"
+---| "fire"
+---| "mining-drill"
+---| "particle-source"
+---| "stream"
+---| "resource"
+---| "turret"
+---| "ammo-turret"
+---| "corpse"
+---| "electric-turret"
+---| "artillery-turret"
+---| "unit-spawner"
+---| "straight-rail"
+---| "curved-rail"
+---| "locomotive"
+---| "cargo-wagon"
+---| "fluid-wagon"
+---| "artillery-wagon"
+---| "simple-entity"
+---| "rail-remnants"
+---| "tree"
+---| "trivial-smoke"
+---| "combat-robot"
+---| "construction-robot"
+---| "logistic-robot"
+---| "capsule"
+---| "repair-tool"
+---| "copy-paste-tool"
+---| "blueprint"
+---| "tool"
+---| "item-with-entity-data"
+---| "rail-planner"
+---| "upgrade-item"
+---| "deconstruction-item"
+---| "blueprint-book"
+---| "spidertron-remote"
+---| "selection-tool"
+---| "item-with-tags"
+---| "item-with-label"
+---| "item-with-inventory"
+---| "module"
+---| "ammo"
+---| "gun"
+---| "armor"
+---| "mining-tool"
+---| "item-group"
+---| "item-subgroup"
+---| "recipe"
+---| "autoplace-control"
+---| "map-settings"
+---| "map-gen-presets"
+---| "tile-effect"
+---| "optimized-decorative"
+---| "damage-type"
+---| "ammo-category"
+---| "fuel-category"
+---| "recipe-category"
+---| "resource-category"
+---| "module-category"
+---| "equipment-grid"
+---| "equipment-category"
+---| "shortcut"
+---| "trigger-target-type"
+---| "projectile"
+---| "artillery-projectile"
+---| "beam"
+---| "technology"
+---| "tips-and-tricks-item"
+---| "tips-and-tricks-item-category"
+---| "build-entity-achievement"
+---| "research-achievement"
+---| "finish-the-game-achievement"
+---| "group-attack-achievement"
+---| "construct-with-robots-achievement"
+---| "deconstruct-with-robots-achievement"
+---| "deliver-by-robots-achievement"
+---| "train-path-achievement"
+---| "player-damaged-achievement"
+---| "produce-achievement"
+---| "produce-per-hour-achievement"
+---| "dont-use-entity-in-energy-production-achievement"
+---| "kill-achievement"
+---| "combat-robot-count"
+---| "dont-craft-manually-achievement"
+---| "dont-build-entity-achievement"
+---| "achievement"
+---| "fluid-turret"
+---| "arithmetic-combinator"
+---| "decider-combinator"
+---| "constant-combinator"
+---| "programmable-speaker"
+---| "power-switch"
+---| "tutorial"
+---| "night-vision-equipment"
+---| "energy-shield-equipment"
+---| "battery-equipment"
+---| "solar-panel-equipment"
+---| "generator-equipment"
+---| "active-defense-equipment"
+---| "movement-bonus-equipment"
+---| "roboport-equipment"
+---| "belt-immunity-equipment"
+---| "smoke"
+---| "particle"
+---| "leaf-particle"
+---| "bool-setting"
+---| "int-setting"
+---| "double-setting"
+---| "string-setting"

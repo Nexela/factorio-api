@@ -1,3 +1,5 @@
+---@meta
+
 do
   ---@alias TriggerItem.Type "direct" | "area" | "line" | "cluster"
 
@@ -263,7 +265,7 @@ do
   local NestedTriggerEffectItem = {}
 
   ---@class PlaySoundTriggerEffectItem: TriggerEffectItem
-  ---@field sound SoundTable|SoundTable.Variations[]
+  ---@field sound Sound|Sound.Variations[]
   local PlaySoundTriggerEffectItem = {
     min_distance = 0.0,
     max_distance = 1e21,
