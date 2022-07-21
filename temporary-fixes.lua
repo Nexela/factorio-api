@@ -14,16 +14,37 @@ local LuaSurface = {
     get_tile = function(x, y) end,
 }
 
----@class integer
----@operator add:uint
 
----@class float
----@operator unm:float
----@operator mod:float
----@operator add:float
----@operator div:float
----@operator sub:float
----@operator mul:float
+-----@class uint
+-----@operator unm:uint
+-----@operator mod:uint
+-----@operator add(float):float
+-----@operator add(uint): uint
+-----@operator div(integer):uint
+-----@operator sub:uint
+-----@operator mul:uint
+
+-----@class float
+-----@operator unm:float
+-----@operator mod:float
+-----@operator add(float):float
+-----@operator add(number):float
+-----@operator add(uint):float
+-----@operator div:float
+-----@operator sub:float
+-----@operator mul:float
+
+-----@class integer
+-----@operator add(integer):integer
+-----@operator add(float):float
+-----@operator add(number):number
+-----@operator add(uint):uint
+
+-----@class number
+-----@operator add(integer):number
+-----@operator add(float):number
+-----@operator add(number):number
+-----@operator add(uint):number
 
 ---@class RealOrientation
 ---@operator unm:RealOrientation
@@ -104,11 +125,3 @@ local LuaSurface = {
 ---@operator div:defines.direction
 ---@operator sub:defines.direction
 ---@operator mul:defines.direction
-
----@class uint
----@operator unm:uint
----@operator mod:uint
----@operator add:uint
----@operator div:uint
----@operator sub:uint
----@operator mul:uint
