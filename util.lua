@@ -170,15 +170,13 @@ util.online_players = function() end
 ---@return X|Lower|Upper
 util.clamp = function(x, lower, upper) end
 
----@param mask {[CollisionMaskLayer]: true}
----@return boolean
-local is_walkable = function(mask) end
-
 ---@return string
 util.get_walkable_tile = function() end
 
--- This function takes 2 icons tables, and adds the second to the first, but applies scale, shift and tint to the entire second set.
--- This allows you to manipulate the entire second icons table in the same way as you would manipulate a single icon when adding to the icons table.
+-- This function takes 2 icons tables, and adds the second to the first, but applies scale,
+-- shift and tint to the entire second set.\
+-- This allows you to manipulate the entire second icons table in the same way as you would
+-- manipulate a single icon when adding to the icons table.
 ---@param icons1 table
 ---@param icons2 table
 ---@param inputs {["scale"]:number?, ["shift"]:Vector.1?, ["tint"]:Color?}
@@ -229,19 +227,6 @@ function util.technology_icon_constant_braking_force(technology_icon) end
 ---@param technology_icon string
 ---@return table[]
 function util.technology_icon_constant_mining(technology_icon) end
-
-local energy_chars =
-{
-  k = 10 ^ 3,
-  K = 10 ^ 3,
-  M = 10 ^ 6,
-  G = 10 ^ 9,
-  T = 10 ^ 12,
-  P = 10 ^ 15,
-  E = 10 ^ 18,
-  Z = 10 ^ 21,
-  Y = 10 ^ 24
-}
 
 ---@param energy string
 ---@return number
