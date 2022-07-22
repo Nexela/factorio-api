@@ -3,6 +3,7 @@
 ---@alias uint32 integer
 ---@alias int32 integer
 ---@alias int16 integer
+---@alias int64 integer
 
 ---@alias FileName string
 ---@alias Order string

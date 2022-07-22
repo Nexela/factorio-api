@@ -3,7 +3,7 @@
 ---@todo Add Settings
 ---@class Prototype
 ---@field name Prototype.name
----@field type PrototypeType.name
+---@field type PrototypeTypes.type
 ---@field localised_description? LocalisedString
 ---@field localised_name? LocalisedString
 ---@field order? string

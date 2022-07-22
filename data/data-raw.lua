@@ -3,208 +3,209 @@
 ---@alias Prototype.name string
 ---@alias PrototypeType {[Prototype.name]: Prototype?}
 
----@class PrototypeTypes: SettingPrototypeTypes
----@field ["font"] PrototypeType
----@field ["noise-layer"] PrototypeType
----@field ["gui-style"] PrototypeType
----@field ["utility-constants"] PrototypeType
----@field ["utility-sounds"] PrototypeType
----@field ["sprite"] PrototypeType
----@field ["utility-sprites"] PrototypeType
----@field ["god-controller"] PrototypeType
----@field ["editor-controller"] PrototypeType
----@field ["spectator-controller"] PrototypeType
----@field ["noise-expression"] PrototypeType
----@field ["mouse-cursor"] PrototypeType
----@field ["virtual-signal"] PrototypeType
----@field ["flying-text"] PrototypeType
----@field ["item"] PrototypeType
----@field ["fluid"] PrototypeType
----@field ["tile"] PrototypeType
----@field ["custom-input"] PrototypeType
----@field ["ambient-sound"] PrototypeType
----@field ["wind-sound"] PrototypeType
----@field ["container"] PrototypeType
----@field ["explosion"] PrototypeType
----@field ["character-corpse"] PrototypeType
----@field ["optimized-particle"] PrototypeType
----@field ["character"] PrototypeType
----@field ["furnace"] PrototypeType
----@field ["transport-belt"] PrototypeType
----@field ["fish"] PrototypeType
----@field ["boiler"] PrototypeType
----@field ["electric-pole"] PrototypeType
----@field ["generator"] PrototypeType
----@field ["offshore-pump"] PrototypeType
----@field ["inserter"] PrototypeType
----@field ["item-entity"] PrototypeType
----@field ["pipe"] PrototypeType
----@field ["radar"] PrototypeType
----@field ["lamp"] PrototypeType
----@field ["arrow"] PrototypeType
----@field ["pipe-to-ground"] PrototypeType
----@field ["assembling-machine"] PrototypeType
----@field ["entity-ghost"] PrototypeType
----@field ["tile-ghost"] PrototypeType
----@field ["deconstructible-tile-proxy"] PrototypeType
----@field ["item-request-proxy"] PrototypeType
----@field ["cliff"] PrototypeType
----@field ["wall"] PrototypeType
----@field ["lab"] PrototypeType
----@field ["highlight-box"] PrototypeType
----@field ["splitter"] PrototypeType
----@field ["underground-belt"] PrototypeType
----@field ["loader"] PrototypeType
----@field ["loader-1x1"] PrototypeType
----@field ["car"] PrototypeType
----@field ["gate"] PrototypeType
----@field ["train-stop"] PrototypeType
----@field ["rail-signal"] PrototypeType
----@field ["rail-chain-signal"] PrototypeType
----@field ["solar-panel"] PrototypeType
----@field ["accumulator"] PrototypeType
----@field ["electric-energy-interface"] PrototypeType
----@field ["player-port"] PrototypeType
----@field ["land-mine"] PrototypeType
----@field ["logistic-container"] PrototypeType
----@field ["rocket-silo"] PrototypeType
----@field ["rocket-silo-rocket"] PrototypeType
----@field ["rocket-silo-rocket-shadow"] PrototypeType
----@field ["roboport"] PrototypeType
----@field ["storage-tank"] PrototypeType
----@field ["pump"] PrototypeType
----@field ["market"] PrototypeType
----@field ["beacon"] PrototypeType
----@field ["smoke-with-trigger"] PrototypeType
----@field ["sticker"] PrototypeType
----@field ["reactor"] PrototypeType
----@field ["heat-pipe"] PrototypeType
----@field ["simple-entity-with-force"] PrototypeType
----@field ["simple-entity-with-owner"] PrototypeType
----@field ["flame-thrower-explosion"] PrototypeType
----@field ["artillery-flare"] PrototypeType
----@field ["unit"] PrototypeType
----@field ["speech-bubble"] PrototypeType
----@field ["spider-vehicle"] PrototypeType
----@field ["spider-leg"] PrototypeType
----@field ["infinity-container"] PrototypeType
----@field ["infinity-pipe"] PrototypeType
----@field ["burner-generator"] PrototypeType
----@field ["heat-interface"] PrototypeType
----@field ["linked-container"] PrototypeType
----@field ["linked-belt"] PrototypeType
----@field ["fire"] PrototypeType
----@field ["mining-drill"] PrototypeType
----@field ["particle-source"] PrototypeType
----@field ["stream"] PrototypeType
----@field ["resource"] PrototypeType
----@field ["turret"] PrototypeType
----@field ["ammo-turret"] PrototypeType
----@field ["corpse"] PrototypeType
----@field ["electric-turret"] PrototypeType
----@field ["artillery-turret"] PrototypeType
----@field ["unit-spawner"] PrototypeType
----@field ["straight-rail"] PrototypeType
----@field ["curved-rail"] PrototypeType
----@field ["locomotive"] PrototypeType
----@field ["cargo-wagon"] PrototypeType
----@field ["fluid-wagon"] PrototypeType
----@field ["artillery-wagon"] PrototypeType
----@field ["simple-entity"] PrototypeType
----@field ["rail-remnants"] PrototypeType
----@field ["tree"] PrototypeType
----@field ["trivial-smoke"] PrototypeType
----@field ["combat-robot"] PrototypeType
----@field ["construction-robot"] PrototypeType
----@field ["logistic-robot"] PrototypeType
----@field ["capsule"] PrototypeType
----@field ["repair-tool"] PrototypeType
----@field ["copy-paste-tool"] PrototypeType
----@field ["blueprint"] PrototypeType
----@field ["tool"] PrototypeType
----@field ["item-with-entity-data"] PrototypeType
----@field ["rail-planner"] PrototypeType
----@field ["upgrade-item"] PrototypeType
----@field ["deconstruction-item"] PrototypeType
----@field ["blueprint-book"] PrototypeType
----@field ["spidertron-remote"] PrototypeType
----@field ["selection-tool"] PrototypeType
----@field ["item-with-tags"] PrototypeType
----@field ["item-with-label"] PrototypeType
----@field ["item-with-inventory"] PrototypeType
----@field ["module"] PrototypeType
----@field ["ammo"] PrototypeType
----@field ["gun"] PrototypeType
----@field ["armor"] PrototypeType
----@field ["mining-tool"] PrototypeType
----@field ["item-group"] PrototypeType
----@field ["item-subgroup"] PrototypeType
----@field ["recipe"] PrototypeType
----@field ["autoplace-control"] PrototypeType
----@field ["map-settings"] PrototypeType
----@field ["map-gen-presets"] PrototypeType
----@field ["tile-effect"] PrototypeType
----@field ["optimized-decorative"] PrototypeType
----@field ["damage-type"] PrototypeType
----@field ["ammo-category"] PrototypeType
----@field ["fuel-category"] PrototypeType
----@field ["recipe-category"] PrototypeType
----@field ["resource-category"] PrototypeType
----@field ["module-category"] PrototypeType
----@field ["equipment-grid"] PrototypeType
----@field ["equipment-category"] PrototypeType
----@field ["shortcut"] PrototypeType
----@field ["trigger-target-type"] PrototypeType
----@field ["projectile"] PrototypeType
----@field ["artillery-projectile"] PrototypeType
----@field ["beam"] PrototypeType
----@field ["technology"] PrototypeType
----@field ["tips-and-tricks-item"] PrototypeType
----@field ["tips-and-tricks-item-category"] PrototypeType
----@field ["build-entity-achievement"] PrototypeType
----@field ["research-achievement"] PrototypeType
----@field ["finish-the-game-achievement"] PrototypeType
----@field ["group-attack-achievement"] PrototypeType
----@field ["construct-with-robots-achievement"] PrototypeType
----@field ["deconstruct-with-robots-achievement"] PrototypeType
----@field ["deliver-by-robots-achievement"] PrototypeType
----@field ["train-path-achievement"] PrototypeType
----@field ["player-damaged-achievement"] PrototypeType
----@field ["produce-achievement"] PrototypeType
----@field ["produce-per-hour-achievement"] PrototypeType
----@field ["dont-use-entity-in-energy-production-achievement"] PrototypeType
----@field ["kill-achievement"] PrototypeType
----@field ["combat-robot-count"] PrototypeType
----@field ["dont-craft-manually-achievement"] PrototypeType
----@field ["dont-build-entity-achievement"] PrototypeType
----@field ["achievement"] PrototypeType
----@field ["fluid-turret"] PrototypeType
----@field ["arithmetic-combinator"] PrototypeType
----@field ["decider-combinator"] PrototypeType
----@field ["constant-combinator"] PrototypeType
----@field ["programmable-speaker"] PrototypeType
----@field ["power-switch"] PrototypeType
----@field ["tutorial"] PrototypeType
----@field ["night-vision-equipment"] PrototypeType
----@field ["energy-shield-equipment"] PrototypeType
----@field ["battery-equipment"] PrototypeType
----@field ["solar-panel-equipment"] PrototypeType
----@field ["generator-equipment"] PrototypeType
----@field ["active-defense-equipment"] PrototypeType
----@field ["movement-bonus-equipment"] PrototypeType
----@field ["roboport-equipment"] PrototypeType
----@field ["belt-immunity-equipment"] PrototypeType
----@field ["smoke"] PrototypeType
----@field ["particle"] PrototypeType
----@field ["leaf-particle"] PrototypeType
+---@class PrototypeTypes: SettingTypes
+---@field ["font"] {[string]: Prototype.Font?}
+---@field ["noise-layer"] {[string]: Prototype.NoiseLayer?}
+---@field ["gui-style"] {[string]: Prototype.GuiStyle?}
+---@field ["utility-constants"] {[string]: Prototype.UtilityConstants?}
+---@field ["utility-sounds"] {[string]: Prototype.UtilitySounds?}
+---@field ["sprite"] {[string]: Prototype.Sprite?}
+---@field ["utility-sprites"] {["default"]: Prototype.UtilitySprites?}
+---@field ["god-controller"] {[string]: Prototype.GodController?}
+---@field ["editor-controller"] {[string]: Prototype.EditorController?}
+---@field ["spectator-controller"] {[string]: Prototype.SpectatorController?}
+---@field ["noise-expression"] {[string]: Prototype.NamedNoiseExpression?}
+---@field ["mouse-cursor"] {[string]: Prototype.MouseCursor?}
+---@field ["virtual-signal"] {[string]: Prototype.VirtualSignal?}
+---@field ["flying-text"] {[string]: Prototype.FlyingText?}
+---@field ["item"] {[string]: Prototype.Item?}
+---@field ["fluid"] {[string]: Prototype.Fluid?}
+---@field ["tile"] {[string]: Prototype.Tile?}
+---@field ["custom-input"] {[string]: Prototype.CustomInput?}
+---@field ["ambient-sound"] {[string]: Prototype.AmbientSound?}
+---@field ["wind-sound"] {[string]: Prototype.WindSound?}
+---@field ["container"] {[string]: Prototype.Container?}
+---@field ["explosion"] {[string]: Prototype.Explosion?}
+---@field ["character-corpse"] {[string]: Prototype.CharacterCorpse?}
+---@field ["optimized-particle"] {[string]: Prototype.Particle?}
+---@field ["character"] {[string]: Prototype.Character?}
+---@field ["furnace"] {[string]: Prototype.Furnace?}
+---@field ["transport-belt"] {[string]: Prototype.TransportBelt?}
+---@field ["fish"] {[string]: Prototype.Fish?}
+---@field ["boiler"] {[string]: Prototype.Boiler?}
+---@field ["electric-pole"] {[string]: Prototype.ElectricPole?}
+---@field ["generator"] {[string]: Prototype.Generator?}
+---@field ["offshore-pump"] {[string]: Prototype.OffshorePump?}
+---@field ["inserter"] {[string]: Prototype.Inserter?}
+---@field ["item-entity"] {[string]: Prototype.ItemEntity?}
+---@field ["pipe"] {[string]: Prototype.Pipe?}
+---@field ["radar"] {[string]: Prototype.Radar?}
+---@field ["lamp"] {[string]: Prototype.Lamp?}
+---@field ["arrow"] {[string]: Prototype.Arrow?}
+---@field ["pipe-to-ground"] {[string]: Prototype.PipeToGround?}
+---@field ["assembling-machine"] {[string]: Prototype.AssemblingMachine?}
+---@field ["entity-ghost"] {[string]: Prototype.EntityGhost?}
+---@field ["tile-ghost"] {[string]: Prototype.TileGhost?}
+---@field ["deconstructible-tile-proxy"] {[string]: Prototype.DeconstructibleTileProxy?}
+---@field ["item-request-proxy"] {[string]: Prototype.ItemRequestProxy?}
+---@field ["cliff"] {[string]: Prototype.Cliff?}
+---@field ["wall"] {[string]: Prototype.Wall?}
+---@field ["lab"] {[string]: Prototype.Lab?}
+---@field ["highlight-box"] {[string]: Prototype.HighlightBoxEntity?}
+---@field ["splitter"] {[string]: Prototype.Splitter?}
+---@field ["underground-belt"] {[string]: Prototype.UndergroundBelt?}
+---@field ["loader"] {[string]: Prototype.Loader1x2?}
+---@field ["loader-1x1"] {[string]: Prototype.Loader1x1?}
+---@field ["car"] {[string]: Prototype.Car?}
+---@field ["gate"] {[string]: Prototype.Gate?}
+---@field ["train-stop"] {[string]: Prototype.TrainStop?}
+---@field ["rail-signal"] {[string]: Prototype.RailSignal?}
+---@field ["rail-chain-signal"] {[string]: Prototype.RailChainSignal?}
+---@field ["solar-panel"] {[string]: Prototype.SolarPanel?}
+---@field ["accumulator"] {[string]: Prototype.Accumulator?}
+---@field ["electric-energy-interface"] {[string]: Prototype.ElectricEnergyInterface?}
+---@field ["player-port"] {[string]: Prototype.PlayerPort?}
+---@field ["land-mine"] {[string]: Prototype.LandMine?}
+---@field ["logistic-container"] {[string]: Prototype.LogisticContainer?}
+---@field ["rocket-silo"] {[string]: Prototype.RocketSilo?}
+---@field ["rocket-silo-rocket"] {[string]: Prototype.RocketSiloRocket?}
+---@field ["rocket-silo-rocket-shadow"] {[string]: Prototype.RocketSiloRocketShadow?}
+---@field ["roboport"] {[string]: Prototype.Roboport?}
+---@field ["storage-tank"] {[string]: Prototype.StorageTank?}
+---@field ["pump"] {[string]: Prototype.Pump?}
+---@field ["market"] {[string]: Prototype.Market?}
+---@field ["beacon"] {[string]: Prototype.Beacon?}
+---@field ["smoke-with-trigger"] {[string]: Prototype.SmokeWithTrigger?}
+---@field ["sticker"] {[string]: Prototype.Sticker?}
+---@field ["reactor"] {[string]: Prototype.Reactor?}
+---@field ["heat-pipe"] {[string]: Prototype.HeatPipe?}
+---@field ["simple-entity-with-force"] {[string]: Prototype.SimpleEntityWithForce?}
+---@field ["simple-entity-with-owner"] {[string]: Prototype.SimpleEntityWithOwner?}
+---@field ["flame-thrower-explosion"] {[string]: Prototype.FlameThrowerExplosion?}
+---@field ["artillery-flare"] {[string]: Prototype.ArtilleryFlare?}
+---@field ["unit"] {[string]: Prototype.Unit?}
+---@field ["speech-bubble"] {[string]: Prototype.SpeechBubble?}
+---@field ["spider-vehicle"] {[string]: Prototype.SpiderVehicle?}
+---@field ["spider-leg"] {[string]: Prototype.SpiderLeg?}
+---@field ["infinity-container"] {[string]: Prototype.InfinityContainer?}
+---@field ["infinity-pipe"] {[string]: Prototype.InfinityPipe?}
+---@field ["burner-generator"] {[string]: Prototype.BurnerGenerator?}
+---@field ["heat-interface"] {[string]: Prototype.HeatInterface?}
+---@field ["linked-container"] {[string]: Prototype.LinkedContainer?}
+---@field ["linked-belt"] {[string]: Prototype.LinkedBelt?}
+---@field ["fire"] {[string]: Prototype.FireFlame?}
+---@field ["mining-drill"] {[string]: Prototype.MiningDrill?}
+---@field ["particle-source"] {[string]: Prototype.ParticleSource?}
+---@field ["stream"] {[string]: Prototype.FluidStream?}
+---@field ["resource"] {[string]: Prototype.ResourceCategory?}
+---@field ["turret"] {[string]: Prototype.Turret?}
+---@field ["ammo-turret"] {[string]: Prototype.AmmoTurret?}
+---@field ["corpse"] {[string]: Prototype.Corpse?}
+---@field ["electric-turret"] {[string]: Prototype.ElectricTurret?}
+---@field ["artillery-turret"] {[string]: Prototype.ArtilleryTurret?}
+---@field ["unit-spawner"] {[string]: Prototype.EnemySpawner?}
+---@field ["straight-rail"] {[string]: Prototype.StraightRail?}
+---@field ["curved-rail"] {[string]: Prototype.CurvedRail?}
+---@field ["locomotive"] {[string]: Prototype.Locomotive?}
+---@field ["cargo-wagon"] {[string]: Prototype.CargoWagon?}
+---@field ["fluid-wagon"] {[string]: Prototype.FluidWagon?}
+---@field ["artillery-wagon"] {[string]: Prototype.ArtilleryWagon?}
+---@field ["simple-entity"] {[string]: Prototype.SimpleEntity?}
+---@field ["rail-remnants"] {[string]: Prototype.RailRemnants?}
+---@field ["tree"] {[string]: Prototype.Tree?}
+---@field ["trivial-smoke"] {[string]: Prototype.TrivialSmoke?}
+---@field ["combat-robot"] {[string]: Prototype.CombatRobot?}
+---@field ["construction-robot"] {[string]: Prototype.ConstructionRobot?}
+---@field ["logistic-robot"] {[string]: Prototype.LogisticRobot?}
+---@field ["capsule"] {[string]: Prototype.Capsule?}
+---@field ["repair-tool"] {[string]: Prototype.RepairTool?}
+---@field ["copy-paste-tool"] {[string]: Prototype.CopyPasteTool?}
+---@field ["blueprint"] {[string]: Prototype.BlueprintItem?}
+---@field ["tool"] {[string]: Prototype.Tool?}
+---@field ["item-with-entity-data"] {[string]: Prototype.ItemWithEntityData?}
+---@field ["rail-planner"] {[string]: Prototype.RailPlanner?}
+---@field ["upgrade-item"] {[string]: Prototype.UpgradeItem?}
+---@field ["deconstruction-item"] {[string]: Prototype.DeconstructionItem?}
+---@field ["blueprint-book"] {[string]: Prototype.BlueprintBook?}
+---@field ["spidertron-remote"] {[string]: Prototype.SpidertronRemote?}
+---@field ["selection-tool"] {[string]: Prototype.SelectionTool?}
+---@field ["item-with-tags"] {[string]: Prototype.ItemWithTags?}
+---@field ["item-with-label"] {[string]: Prototype.ItemWithLabel?}
+---@field ["item-with-inventory"] {[string]: Prototype.ItemWithInventory?}
+---@field ["module"] {[string]: Prototype.Module?}
+---@field ["ammo"] {[string]: Prototype.AmmoItem?}
+---@field ["gun"] {[string]: Prototype.Gun?}
+---@field ["armor"] {[string]: Prototype.Armor?}
+---@field ["mining-tool"] {[string]: Prototype.MiningTool?}
+---@field ["item-group"] {[string]: Prototype.ItemGroup?}
+---@field ["item-subgroup"] {[string]: Prototype.ItemSubGroup?}
+---@field ["recipe"] {[string]: Prototype.Recipe?}
+---@field ["autoplace-control"] {[string]: Prototype.AutoplaceControl?}
+---@field ["map-settings"] {[string]: Prototype.MapSettings?}
+---@field ["map-gen-presets"] {["default"]: Prototype.MapGenPresets?}
+---@field ["tile-effect"] {[string]: Prototype.TileEffect?}
+---@field ["optimized-decorative"] {[string]: Prototype.Decorative?}
+---@field ["damage-type"] {[string]: Prototype.DamageType?}
+---@field ["ammo-category"] {[string]: Prototype.AmmoCategory?}
+---@field ["fuel-category"] {[string]: Prototype.FuelCategory?}
+---@field ["recipe-category"] {[string]: Prototype.RecipeCategory?}
+---@field ["resource-category"] {[string]: Prototype.ResourceCategory?}
+---@field ["module-category"] {[string]: Prototype.ModuleCategory?}
+---@field ["equipment-grid"] {[string]: Prototype.EquipmentGrid?}
+---@field ["equipment-category"] {[string]: Prototype.EquipmentCategory?}
+---@field ["shortcut"] {[string]: Prototype.Shortcut?}
+---@field ["trigger-target-type"] {[string]: Prototype.TriggerTargetType?}
+---@field ["projectile"] {[string]: Prototype.Projectile?}
+---@field ["artillery-projectile"] {[string]: Prototype.ArtilleryProjectile?}
+---@field ["beam"] {[string]: Prototype.Beam?}
+---@field ["technology"] {[string]: Prototype.Technology?}
+---@field ["tips-and-tricks-item"] {[string]: Prototype.TipsAndTricksItem?}
+---@field ["tips-and-tricks-item-category"] {[string]: Prototype.TipsAndTricksItemCategory?}
+---@field ["build-entity-achievement"] {[string]: Prototype.BuildEntityAchievement?}
+---@field ["research-achievement"] {[string]: Prototype.ResearchAchievement?}
+---@field ["finish-the-game-achievement"] {[string]: Prototype.FinishTheGameAchievement?}
+---@field ["group-attack-achievement"] {[string]: Prototype.GroupAttackAchievement?}
+---@field ["construct-with-robots-achievement"] {[string]: Prototype.ConstructWithRobotsAchievement?}
+---@field ["deconstruct-with-robots-achievement"] {[string]: Prototype.DeconstructWithRobotsAchievement?}
+---@field ["deliver-by-robots-achievement"] {[string]: Prototype.DeliverByRobotsAchievement?}
+---@field ["train-path-achievement"] {[string]: Prototype.TrainPathAchievement?}
+---@field ["player-damaged-achievement"] {[string]: Prototype.PlayerDamagedAchievement?}
+---@field ["produce-achievement"] {[string]: Prototype.ProduceAchievement?}
+---@field ["produce-per-hour-achievement"] {[string]: Prototype.ProducePerHourAchievement?}
+---@field ["dont-use-entity-in-energy-production-achievement"] {[string]: Prototype.DontUseEntityInEnergyProductionAchievement?}
+---@field ["kill-achievement"] {[string]: Prototype.KillAchievement?}
+---@field ["combat-robot-count"] {[string]: Prototype.CombatRobotCountAchievement?}
+---@field ["dont-craft-manually-achievement"] {[string]: Prototype.DontCraftManuallyAchievement?}
+---@field ["dont-build-entity-achievement"] {[string]: Prototype.DontBuildEntityAchievement?}
+---@field ["achievement"] {[string]: Prototype.Achievement?}
+---@field ["fluid-turret"] {[string]: Prototype.FluidTurret?}
+---@field ["arithmetic-combinator"] {[string]: Prototype.ArithmeticCombinator?}
+---@field ["decider-combinator"] {[string]: Prototype.DeciderCombinator?}
+---@field ["constant-combinator"] {[string]: Prototype.ConstantCombinator?}
+---@field ["programmable-speaker"] {[string]: Prototype.ProgrammableSpeaker?}
+---@field ["power-switch"] {[string]: Prototype.PowerSwitch?}
+---@field ["tutorial"] {[string]: Prototype.Tutorial?}
+---@field ["night-vision-equipment"] {[string]: Prototype.NightVisionEquipment?}
+---@field ["energy-shield-equipment"] {[string]: Prototype.EnergyShieldEquipment?}
+---@field ["battery-equipment"] {[string]: Prototype.BatteryEquipment?}
+---@field ["solar-panel-equipment"] {[string]: Prototype.SolarPanelEquipment?}
+---@field ["generator-equipment"] {[string]: Prototype.GeneratorEquipment?}
+---@field ["active-defense-equipment"] {[string]: Prototype.ActiveDefenseEquipment?}
+---@field ["movement-bonus-equipment"] {[string]: Prototype.MovementBonusEquipment?}
+---@field ["roboport-equipment"] {[string]: Prototype.RoboportEquipment?}
+---@field ["belt-immunity-equipment"] {[string]: Prototype.BeltImmunityEquipment?}
+---@field ["smoke"] {[string]: Prototype.Smoke?}
+---@field ["particle"] {[string]: Prototype.Particle?}
+---@field ["leaf-particle"] {[string]: Prototype.LeafParticle?}
 
----@class SettingPrototypeTypes
----@field ["bool-setting"] PrototypeType
----@field ["int-setting"] PrototypeType
----@field ["double-setting"] PrototypeType
----@field ["string-setting"] PrototypeType
+---@class SettingTypes
+---@field ["bool-setting"] {[string]: SettingType.BoolSetting?}
+---@field ["int-setting"] {[string]: SettingType.IntSetting?}
+---@field ["double-setting"] {[string]: SettingType.DoubleSetting?}
+---@field ["string-setting"] {[string]: SettingType.StringSetting?}
 
----@alias PrototypeType.name
+---@alias SettingTypes.type "bool-setting" | "int-setting" | "double-setting" | "string-setting"
+---@alias PrototypeTypes.type
 ---| "font"
 ---| "noise-layer"
 ---| "gui-style"
