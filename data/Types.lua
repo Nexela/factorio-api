@@ -35,11 +35,10 @@
 ---@class FootprintParticle
 ---@class FootstepTriggerEffectList
 ---@class HeatBuffer
----@class IconSpecification
----@class IconsSpecification
+---@class IconData
 ---@class IngredientPrototype
 ---@class InterruptibleSound
----@class ItemCountType
+---@alias ItemCountType uint32
 ---@class ItemProductPrototype
 ---@class ItemStackIndex
 ---@class ItemToPlace
@@ -71,7 +70,7 @@
 ---@class Sprite4Way
 ---@class SpriteFlags
 ---@class SpritePriority
----@class SpriteSizeType
+---@alias SpriteSizeType int16
 ---@class SpriteVariations
 ---@class Stripe
 ---@class Technology
