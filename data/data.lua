@@ -6,5 +6,8 @@
 ---@field raw PrototypeTypes
 data = {}
 
+---@type {[string]: boolean}
+mods = {}
+
 ---@param otherdata Prototype[]
 function data.extend(self, otherdata) end

@@ -1,6 +1,5 @@
 ---@meta
 
----@todo Add Settings
 ---@class Prototype
 ---@field name Prototype.name
 ---@field type PrototypeTypes.type
